@@ -5,13 +5,13 @@ import React from 'react'
 function Nav({ currentPage, handlePageChange }) {
 
     return (
-        // <header className="flex-row px-1">
-        //     <h2>
-        //         <a data-testid="link" href="/">
-        //             {/* <span role="img" aria-label="profilepic"> </span> */}
-        //             {/* <img src={developer} alt="developer" /> */}
-        //         </a>
-        //     </h2>
+        <header className="flex-row px-1">
+            <h2>
+                <a data-testid="link" href="/">
+                    {/* <span role="img" aria-label="profilepic"> </span> */}
+                    {/* <img src={developer} alt="developer" /> */}
+                </a>
+            </h2>
             <nav>
                 <ul className="flex-row">
                     <li className="mx-2">
@@ -49,7 +49,8 @@ function Nav({ currentPage, handlePageChange }) {
                     </li>
                 </ul>
             </nav>
-        // </header>
+        </header>
+        
     )
 }
 

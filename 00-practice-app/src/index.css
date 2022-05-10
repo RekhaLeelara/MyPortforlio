@@ -33,7 +33,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  /* color: var(--light); */
+  color: purple;
   font-family: 'Poiret One', cursive;
 }
 
@@ -44,6 +44,9 @@ nav  li {
 .flex-row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: 500px;
+  font-size: 30px;
+  margin-bottom: 50px;
 }
 
 .space-between {
@@ -68,3 +71,27 @@ nav  li {
 .my-5{
   color: black;
   }
+  
+
+  .button{
+
+      /* remove default behavior */
+      appearance:none;
+      -webkit-appearance:none;
+    
+      /* usual styles */
+      padding:10px;
+      border:none;
+      background-color:#3F51B5;
+      color:#fff;
+      font-weight:600;
+      border-radius:5px;
+      width:20%;
+  }
+
+  .email,.name,.message, .field{
+    width: 60%;
+    padding:10px;
+    border-radius:10px;
+  } 
+

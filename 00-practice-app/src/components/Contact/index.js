@@ -1,45 +1,66 @@
-import React from 'react'
+import React, {useState} from 'react'
+import { validateEmail } from '../../utils/helpers';
 
 
-function contact(){
+function Contact(){
 
   const [formState, setFormState] = useState({name: '', email:'', message:''})
 
   const[errorMessage, setErrorMessage] = useState('');
   const{name, email, message} = formState;
 
-
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if(!errormessage){
+    if(!errorMessage){
       setFormState({[e.target.name]: e.target.value});
       console.log('Form', formState);
     }
-
   }
+
+  const handleChange = (e) => {
+    if (e.target.name === 'email') {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage('Your email is invalid.');
+      } else {
+        setErrorMessage('');
+      }
+    } else {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage('');
+      }
+    }
+  };
 
 
     return(
         <section>
         <h1 data-testid="h1tag">Contact</h1>
         <form id="contact-form" onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Name:</label>
-          <input type="text" name="name" defaultValue={name} />
+        <div className = "field">
+          <label htmlFor="name">Name: </label>
+          <input type="text" name="name"  className = "name" defaultValue={name} onBlur={handleChange} />
         </div>
-        <div>
-          <label htmlFor="email">Email address:</label>
-          <input type="email" name="email"/>
+
+        <div className = "field">
+          <label htmlFor="email">Email address: </label>
+          <input type="email" name="email" className = "email" defaultValue={email} onBlur={handleChange}/>
         </div>
-        <div>
-          <label htmlFor="message">Message:</label>
-          <textarea name="message" rows="5"/>
+        <div className = "field">
+          <label htmlFor="message">Message: </label>
+          <textarea name="message" rows="15" columns="20"  className = "message" defaultValue={message} onBlur={handleChange}/>
         </div>
-        <button data-testid="button" type="submit">Submit</button>
+        {errorMessage && (
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
+        )}
+        <button data-testid="button" className = "button" type="submit">Submit</button>
         </form>
         </section>
     );
 }
 
-export default contact;
+export default Contact;
