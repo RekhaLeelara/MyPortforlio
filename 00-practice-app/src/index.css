@@ -95,3 +95,41 @@ nav  li {
     border-radius:10px;
   } 
 
+  .portpic{
+    padding: 10px;
+  }
+
+  .portimg{
+    width: 700px;
+    height: 300px;
+  }
+
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .dialog {
+    box-shadow: 0 8px 6px -6px black;
+    position: static;
+    left: 20%;
+    top: 10%;
+  }
+  
+  .image {
+    width: 800px;
+  }
+
+  .resumesection{
+    margin-left: 100px;
+  }
+
+  .resumeTitle{
+    font-size: 50px;
+  }
+
+  .portfolioimg{
+    width: 100px;
+    height: 80px;
+  }
+

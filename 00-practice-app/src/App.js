@@ -1,9 +1,10 @@
 import './App.css';
 import React from 'react';
 import PortfolioContainer from './components/PortfolioContainer';
+// import Portfolio from './components/Portfolio'
 
 
-const App = () => 
+const App = () =>
 <PortfolioContainer/>;
 
 
