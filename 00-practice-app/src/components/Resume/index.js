@@ -41,5 +41,6 @@ function Resume() {
     );
 }
 
+//Exporting the Resume page contents
 export default Resume
 

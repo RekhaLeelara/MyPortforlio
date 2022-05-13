@@ -6,6 +6,7 @@ import About from '../About'
 import Resume from '../Resume'
 import Contact from '../Contact'
 
+
 export default function PortfolioContainer() {
 
   //setting default state and defining "setCurrentPage" for the change

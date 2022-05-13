@@ -1,3 +1,4 @@
+//importing the necessary files
 import React from 'react'
 import portfolio from '../../../src/portfolio.webp'
 
@@ -6,7 +7,6 @@ function Nav({ currentPage, handlePageChange }) {
 
     return (
         <header className="flex-row px-1">
-            {/* <img src={portfolio} className = "portfolioimg" alt="portfolio" /> */}
             <nav>
                 <ul className="flex-row">
                         <div className="mx-2">
@@ -49,5 +49,5 @@ function Nav({ currentPage, handlePageChange }) {
     )
 }
 
-
+//Exporting the Navigation page contents
 export default Nav;

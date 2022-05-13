@@ -1,9 +1,9 @@
+//importing necessary files
 import './App.css';
 import React from 'react';
 import PortfolioContainer from './components/PortfolioContainer';
-// import Portfolio from './components/Portfolio'
 
-
+//rendering the portfolio container
 const App = () =>
 <PortfolioContainer/>;
 
