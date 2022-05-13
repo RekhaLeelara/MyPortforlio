@@ -132,4 +132,38 @@ nav  li {
     width: 100px;
     height: 80px;
   }
+  
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
 
+.hidden {
+  display: none;
+}
+
+.port-one {
+  position: relative;
+  width: 50%;
+}
+
+.javascriptimg {
+  width: 100%;
+}
+
+.project-info-one {
+  position: absolute;
+}
+
+.port-one:hover .hidden {
+  display: block;
+}
+
+.githubicon{
+  height: 30px;
+  width: 30px;
+}
+
+.project-info-one{
+  margin-left: 50%;
+}

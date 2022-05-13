@@ -1,11 +1,12 @@
+//importing the necessary files
 import React, {useState} from 'react'
 import { validateEmail } from '../../utils/helpers';
 
+//To display the contents displayed in the Contact page
 
 function Contact(){
 
   const [formState, setFormState] = useState({name: '', email:'', message:''})
-
   const[errorMessage, setErrorMessage] = useState('');
   const{name, email, message} = formState;
 
@@ -63,4 +64,5 @@ function Contact(){
     );
 }
 
+//Exporting the Contact page contents
 export default Contact;

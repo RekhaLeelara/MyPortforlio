@@ -1,6 +1,8 @@
+//import all the necessary files
 import React from 'react';
 import resume from '../../../src/Rekha_Leelaraman.pdf'
 
+//display contents in the resume page section
 function Resume() {
 
     return (
@@ -8,8 +10,9 @@ function Resume() {
 
             <h1 className='resumeTitle'>Resume</h1>
             <div>
-            <span><p> Download my </p><a href={resume} target="_blank" rel="noreferrer" >resume</a></span>
-                {/* <a href={resume} target="_blank" rel="noreferrer" className="resLink"><h3 className="viewTitle" id="resumeTitle">RESUME</h3></a> */}
+            <span><p> Download my </p>
+            <a href={resume} download>resume</a>
+            </span>
             </div>
             <div>
                 <h1>Front-end Proficiencies</h1>

@@ -1,14 +1,17 @@
+//import all the necessary files
 import React, { useState } from 'react';
 import Nav from '../Nav';
-import Portfolio from '../Portfolio/'
+import Portfolio from '../Portfolio/index'
 import About from '../About'
 import Resume from '../Resume'
 import Contact from '../Contact'
 
 export default function PortfolioContainer() {
+
+  //setting default state and defining "setCurrentPage" for the change
   const [currentPage, setCurrentPage] = useState('About');
 
-  // TODO: Add a comment describing the functionality of this method
+  // This method helps to render different pages based on the user navigation click
   const renderPage = () => {
     if (currentPage === 'Resume') {
       return <Resume />;
@@ -24,11 +27,10 @@ export default function PortfolioContainer() {
 
   const handlePageChange = (page) => setCurrentPage(page);
 
+  //setting current page and handle the navigation
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
     </div>
   );
