@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/MyPortforlio/static/css/main.1923d70b.chunk.css",
+    "main.js": "/MyPortforlio/static/js/main.6ed5421f.chunk.js",
+    "main.js.map": "/MyPortforlio/static/js/main.6ed5421f.chunk.js.map",
+    "runtime-main.js": "/MyPortforlio/static/js/runtime-main.42474c67.js",
+    "runtime-main.js.map": "/MyPortforlio/static/js/runtime-main.42474c67.js.map",
+    "static/js/2.7fadf036.chunk.js": "/MyPortforlio/static/js/2.7fadf036.chunk.js",
+    "static/js/2.7fadf036.chunk.js.map": "/MyPortforlio/static/js/2.7fadf036.chunk.js.map",
+    "static/js/3.702696d3.chunk.js": "/MyPortforlio/static/js/3.702696d3.chunk.js",
+    "static/js/3.702696d3.chunk.js.map": "/MyPortforlio/static/js/3.702696d3.chunk.js.map",
+    "index.html": "/MyPortforlio/index.html",
+    "static/css/main.1923d70b.chunk.css.map": "/MyPortforlio/static/css/main.1923d70b.chunk.css.map",
+    "static/js/2.7fadf036.chunk.js.LICENSE.txt": "/MyPortforlio/static/js/2.7fadf036.chunk.js.LICENSE.txt",
+    "static/media/MVC.186a8a69.jpeg": "/MyPortforlio/static/media/MVC.186a8a69.jpeg",
+    "static/media/Rekha_Leelaraman.c64faa71.pdf": "/MyPortforlio/static/media/Rekha_Leelaraman.c64faa71.pdf",
+    "static/media/developer.e26f0c1c.png": "/MyPortforlio/static/media/developer.e26f0c1c.png",
+    "static/media/javascript.0a6a3aa1.webp": "/MyPortforlio/static/media/javascript.0a6a3aa1.webp",
+    "static/media/mysql.a1a1e633.jpeg": "/MyPortforlio/static/media/mysql.a1a1e633.jpeg",
+    "static/media/portfolio.46517d09.webp": "/MyPortforlio/static/media/portfolio.46517d09.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42474c67.js",
+    "static/js/2.7fadf036.chunk.js",
+    "static/css/main.1923d70b.chunk.css",
+    "static/js/main.6ed5421f.chunk.js"
+  ]
+}
