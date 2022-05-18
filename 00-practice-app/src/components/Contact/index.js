@@ -2,6 +2,7 @@
 import React, {useState} from 'react'
 import { validateEmail } from '../../utils/helpers';
 
+
 //To display the contents displayed in the Contact page
 
 function Contact(){
@@ -13,7 +14,7 @@ function Contact(){
   const handleSubmit = (e) => {
     e.preventDefault();
     if(!errorMessage){
-      setFormState({[e.target.name]: e.target.value});
+      setFormState({name: '', email:'', message:''})
       console.log('Form', formState);
     }
   }
@@ -33,7 +34,15 @@ function Contact(){
         setErrorMessage('');
       }
     }
+    if (!errorMessage){
+      setFormState({...formState, [e.target.name]: e.target.value});
+      console.log("setFormStateemail", formState);
+    }
   };
+
+//   function handleSubmit(e) {
+//     e.preventDefault();
+// }
 
 
     return(
